@@ -9,7 +9,8 @@ class Solution:
                     f = i
                 else:
                     s = i
-        if nums.count(target) == 1:
+        
+        if nums.count(target) == 1: # after the for loop
             return [f,f]
         else:
             return [f,s]
