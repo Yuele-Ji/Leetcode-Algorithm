@@ -2,7 +2,10 @@ class Solution:
     def searchRange(self, nums, target):
         l = self.findLeft(nums, target)
         r = self.findRight(nums, target)
-        return [l, r] if l <= r else [-1, -1]
+        if left <= right:
+            return [left,right]
+        else:
+            return [-1,-1]
     
     
     def findLeft(self, nums, target):
