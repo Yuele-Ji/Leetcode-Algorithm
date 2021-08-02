@@ -1,3 +1,20 @@
+# brute force
+class Solution:
+    def searchRange(self, nums: List[int], target: int) -> List[int]:
+        f,s = -1, -1
+        
+        for i in(range(len(nums))):
+            if nums[i] == target:
+                if f == -1: # make sure we get the first value
+                    f = i
+                else:
+                    s = i
+        if nums.count(target) == 1:
+            return [f,f]
+        else:
+            return [f,s]
+
+# binary search
 class Solution:
     def searchRange(self, nums, target):
         l = self.findLeft(nums, target)
