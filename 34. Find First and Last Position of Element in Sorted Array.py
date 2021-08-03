@@ -9,7 +9,8 @@ class Solution:
                 if first == -1: # if first is still equals to -1, means it's still the default value
                     first = i # we can assign the current index to first
                 else: # if it's not, we store the index to the next variable
-                    last = i #so that during the iteration, we will keep replace the last position with the larger index untill we've search the last element in array
+                    last = i #so that during the iteration, 
+                             # we will keep replace the last position with the larger index untill we've search the last element in array
         # after the search, there are three situations, 
         # 1:we find the target and it only appeared once in the array so we have our first index, but the last is still -1,we will return [f,f]
         # 2. we have multiple target value in the array, so we can just 
